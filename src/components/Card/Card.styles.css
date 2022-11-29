@@ -1,0 +1,26 @@
+.card-container {
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(to bottom, hsl(213deg 20% 18%), hsl(215deg 27% 12%));
+  width: 415px;
+  height: 415px;
+  border-radius: 30px;
+  padding: 35px;
+  padding-right: 40px;
+}
+
+.card-container p {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5;
+}
+
+.submit-rating-button {
+  width: 100%;
+  padding: 13px 0;
+  border: none;
+  border-radius: 40px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  background-color: hsl(25, 97%, 53%);
+}
