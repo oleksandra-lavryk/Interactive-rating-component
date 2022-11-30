@@ -23,4 +23,18 @@
   color: hsl(0, 0%, 100%);
   text-transform: uppercase;
   background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.submit-rating-button:hover,
+.submit-rating-button:active {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.rating-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
 }
