@@ -2,55 +2,45 @@ import React from "react";
 import { useState } from "react";
 import "./Card.styles.css";
 import { RadioButton } from "../RadioButton/RadioButton.component";
+import { Image } from "../Image/Image.component";
 
 export const Card = () => {
   const [selectedRating, setSelectedRating] = useState(0);
+  const [isRate, setIsRate] = useState(false);
+  const ratingData = [1, 2, 3, 4, 5];
 
   function handleRadioButton(e) {
-    console.log(e.target.value);
     setSelectedRating(e.target.value);
+  }
+
+  function submitRating() {
+    if (selectedRating !== 0) {
+      setIsRate(true);
+    }
   }
 
   return (
     <div className="card-container">
+      <Image isRate={isRate} />
       <h1>How did we do?</h1>
       <p>
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
       <div className="rating-wrapper">
-        <RadioButton
-          value={1}
-          label={1}
-          rating={selectedRating}
-          handleOnChange={handleRadioButton}
-        />
-        <RadioButton
-          value={2}
-          label={2}
-          rating={selectedRating}
-          handleOnChange={handleRadioButton}
-        />
-        <RadioButton
-          value={3}
-          label={3}
-          rating={selectedRating}
-          handleOnChange={handleRadioButton}
-        />
-        <RadioButton
-          value={4}
-          label={4}
-          rating={selectedRating}
-          handleOnChange={handleRadioButton}
-        />
-        <RadioButton
-          value={5}
-          label={5}
-          rating={selectedRating}
-          handleOnChange={handleRadioButton}
-        />
+        {ratingData.map((item) => (
+          <RadioButton
+            value={item}
+            label={item}
+            key={item}
+            rating={selectedRating}
+            handleOnChange={handleRadioButton}
+          />
+        ))}
       </div>
-      <button className="submit-rating-button">Submit</button>
+      <button className="submit-rating-button" onClick={submitRating}>
+        Submit
+      </button>
     </div>
   );
 };
