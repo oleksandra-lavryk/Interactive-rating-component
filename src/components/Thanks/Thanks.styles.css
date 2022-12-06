@@ -1,0 +1,15 @@
+.thanks-wrapper {
+  text-align: center;
+}
+
+p.selected-rating {
+  background-color: hsl(210deg 19% 19%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  display: block;
+  padding: 9px 20px;
+  line-height: 1;
+  margin: auto;
+  margin-top: 20px;
+  width: fit-content;
+}

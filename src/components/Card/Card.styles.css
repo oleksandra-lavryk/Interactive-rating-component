@@ -8,6 +8,10 @@
   padding-right: 40px;
 }
 
+.card-container h1 {
+  margin: 20px 0;
+}
+
 .card-container p {
   color: hsl(217, 12%, 63%);
   line-height: 1.5;
@@ -36,5 +40,5 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 30px 0;
+  margin: 25px 0;
 }

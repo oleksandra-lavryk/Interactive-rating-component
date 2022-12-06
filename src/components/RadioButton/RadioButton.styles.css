@@ -1,7 +1,12 @@
+.rating-item {
+  display: flex;
+}
+
 .rating-item input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  margin: 0;
 }
 
 .rating-item label {
