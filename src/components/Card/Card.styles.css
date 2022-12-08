@@ -42,3 +42,11 @@
   justify-content: space-between;
   margin: 25px 0;
 }
+
+@media screen and (max-width: 455px) {
+  .card-container {
+    padding: 20px;
+    width: calc(100vw - 40px);
+    height: unset;
+  }
+}
